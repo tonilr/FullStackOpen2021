@@ -1,0 +1,6 @@
+browser -> server HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+	The request contains the text submited by the user and the date in JSON format
+
+server -> browser HTTP 201
+
+The browser executes the Javascript code to obtain the element "notes_form", create a new element inside "note", push this new element in "notes", redraw the notes and send them to the server
